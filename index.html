@@ -82,30 +82,30 @@ else{
             var total;
             var vat;
             var result;
-
+            document.write("<br>Peoblem-4: (Suppose units= 340) <br>");
             if(units>=0 && units<=50){
                 total = units*0.50;
                 vat = (total*20)/100;
                 result = total+vat;
-                document.write("<br>Peoblem-4:<br>Total: "+total+" ,<br>VAT: "+vat+" ,<br>Final: "+result+".<br>");
+                document.write("Total: "+total+" ,<br>VAT: "+vat+" ,<br>Final: "+result+".<br>");
             }
             else if(units>50 && units<=150){
                 total = (50*0.50) + ((units-50)*0.75);
                 vat = vat = (total*20)/100;
                 result =total+vat;
-                document.write("<br>Peoblem-4:<br>Total: "+total+" ,<br>VAT: "+vat+" ,<br>Final: "+result+".<br>");
+                document.write("Total: "+total+" ,<br>VAT: "+vat+" ,<br>Final: "+result+".<br>");
             }
             else if(units>150 && units<=250){
                 total = (50*0.50) + (100*0.75) + ((units-150)*1.20);
                 vat = (total*20)/100;
                 result =total+vat;
-                document.write("<br>Peoblem-4:<br>Total: "+total+" ,<br>VAT: "+vat+" ,<br>Final: "+result+".<br>");
+                document.write("Total: "+total+" ,<br>VAT: "+vat+" ,<br>Final: "+result+".<br>");
             }
             else{
                 total = (50*0.50) + (100*0.75) + (100*1.20) + ((units-250)*1.50);
                 vat = (total*20)/100;
                 result =total+vat;
-                document.write("<br>Peoblem-4:<br>Total: "+total+" ,<br>VAT: "+vat+" ,<br>Final: "+result+".<br>");
+                document.write("Total: "+total+" ,<br>VAT: "+vat+" ,<br>Final: "+result+".<br>");
             }
 
 var n = 12345;
