@@ -87,25 +87,25 @@ else{
                 total = units*0.50;
                 vat = (total*20)/100;
                 result = total+vat;
-                document.write("Total: "+total+" ,<br>VAT: "+vat+" ,<br>Final: "+result+".<br>");
+                document.write("Total Charge: "+total+" ,<br>VAT: "+vat+" ,<br>Final Charge: "+result+".<br>");
             }
             else if(units>50 && units<=150){
                 total = (50*0.50) + ((units-50)*0.75);
                 vat = vat = (total*20)/100;
                 result =total+vat;
-                document.write("Total: "+total+" ,<br>VAT: "+vat+" ,<br>Final: "+result+".<br>");
+                document.write("Total Charge: "+total+" ,<br>VAT: "+vat+" ,<br>Final Charge: "+result+".<br>");
             }
             else if(units>150 && units<=250){
                 total = (50*0.50) + (100*0.75) + ((units-150)*1.20);
                 vat = (total*20)/100;
                 result =total+vat;
-                document.write("Total: "+total+" ,<br>VAT: "+vat+" ,<br>Final: "+result+".<br>");
+                document.write("Total Charge: "+total+" ,<br>VAT: "+vat+" ,<br>Final Charge: "+result+".<br>");
             }
             else{
                 total = (50*0.50) + (100*0.75) + (100*1.20) + ((units-250)*1.50);
                 vat = (total*20)/100;
                 result =total+vat;
-                document.write("Total: "+total+" ,<br>VAT: "+vat+" ,<br>Final: "+result+".<br>");
+                document.write("Total Charge: "+total+" ,<br>VAT: "+vat+" ,<br>Final Charge: "+result+".<br>");
             }
 
 var n = 12345;
