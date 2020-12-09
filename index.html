@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS</title>
+	<!-- JS code -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<script>
+//var num2=5;
+//var total= num1+num2;
+//var name="khadiza";
+//document.write("The result is: "+total+".<br>Made by "+ name+".<br>");
+var num1=25  ;
+if (num1>0) {document.write("<br>Problem_1.<br> The number is: Positive.<br>");
+}
+else if(num1<0){
+document.write("<br>Problem_1.<br> The number is: Negative.<br>");
+}
+else {
+document.write("<br>Problem_1.<br> The number is: Equal to zero.<br>");
+}
+
+
+var side1 = 25  ;
+var side2 = 15  ;
+var side3 = 25  ;
+if (side1==side3 && side1==side2) {
+	document.write("<br>Problem_2.<br> The triangle is: Equilateral.<br>");
+}
+else if(side1==side2 || side1==side3 || side2==side3){
+document.write("<br>Problem_2.<br> The triangle is: Scalene.<br>");
+}
+
+else{
+document.write("<br>Problem_2.<br> The triangle is: Isosceles.<br>");
+}
+
+var side1 = 20  ;
+var side2 = 5  ;
+var side3 = 15  ;
+
+if(side1+side2>side3 || side1+side3>side2 || side2+side3>side1){
+document.write("<br>Problem_2.2.<br> It's possible to create a triangle.<br>");
+}
+else{
+	document.write("<br>Problem_2.2.<br> It's not possible to create a triangle.<br>");
+}
+
+var physics = 75  ;
+var chemistry = 85  ;
+var biology = 85  ;
+var mathematics = 80  ;
+var computer = 90  ;
+var total = physics+chemistry+biology+mathematics+computer;
+var percentage =parseInt((total*100)/500);
+
+document.write("<br><br>Problem_3.1.<br>Total marks: "+total+".<br>");
+document.write("<br>Problem_3.2.<br>The Percentage is: "+percentage+".<br>");
+
+if (percentage>=90) {
+	document.write("<br>Problem_3.3.<br>The Grade is: A.<br>");
+}
+else if (percentage>=80 && percentage<90) {
+	document.write("<br>Problem_3.3.<br>The Grade is: B.<br>");
+}
+else if (percentage>=70 && percentage<80) {
+	document.write("<br>Problem_3.3.<br>The Grade is: C.<br>");
+}
+else if (percentage>=60 && percentage<70) {
+	document.write("<br>Problem_3.3.<br>The Grade is: D.<br>");
+}
+else if (percentage>=40 && percentage<60) {
+	document.write("<br>Problem_3.3.<br>The Grade is: E.<br>");
+}
+else{
+	document.write("<br>Problem_3.3.<br>The Grade is: F.<br>");
+}
+
+
+            var units=340;
+            var total;
+            var vat;
+            var result;
+
+            if(units>=0 && units<=50){
+                total = units*0.50;
+                vat = (total*20)/100;
+                result = total+vat;
+                document.write("<br>Peoblem-4:<br>Total: "+total+" ,<br>VAT: "+vat+" ,<br>Final: "+result+".<br>");
+            }
+            else if(units>50 && units<=150){
+                total = (50*0.50) + ((units-50)*0.75);
+                vat = vat = (total*20)/100;
+                result =total+vat;
+                document.write("<br>Peoblem-4:<br>Total: "+total+" ,<br>VAT: "+vat+" ,<br>Final: "+result+".<br>");
+            }
+            else if(units>150 && units<=250){
+                total = (50*0.50) + (100*0.75) + ((units-150)*1.20);
+                vat = (total*20)/100;
+                result =total+vat;
+                document.write("<br>Peoblem-4:<br>Total: "+total+" ,<br>VAT: "+vat+" ,<br>Final: "+result+".<br>");
+            }
+            else{
+                total = (50*0.50) + (100*0.75) + (100*1.20) + ((units-250)*1.50);
+                vat = (total*20)/100;
+                result =total+vat;
+                document.write("<br>Peoblem-4:<br>Total: "+total+" ,<br>VAT: "+vat+" ,<br>Final: "+result+".<br>");
+            }
+
+var n = 12345;
+var sum = 0;
+var reminder;
+var i = 0;
+while(n !== 0){
+    reminder = n%10;
+    sum = sum + reminder;
+    n = parseInt(n/10);
+    i++;
+}
+document.write("<br>Problem_5.1.<br>Total digit: "+i+"<br>");
+document.write("<br>Problem_5.2.<br>Sum: "+sum+"<br>");
+   
+
+
+ var i = 1;
+ document.write("<br>Problem_7.<br>Prime numbers (between 1-50) are: <br>");
+    while (i <= 50) {
+        var factor=0;
+        var primeCheckNumber=2;
+        while(primeCheckNumber<= i-1){ //(* 2 to oi number er ag porjonto kono number diye vag hoy kina check korar jonno)
+   	        if (i% primeCheckNumber==0){
+   		        factor++;
+   	        }
+   	        primeCheckNumber++;
+        }
+        if (factor==0 && i != 1){
+   	    document.write(i+"<br>");
+        }
+
+        i++;
+    }
+
+var n = 55;
+var sum = 0;
+var i = 1;
+while(i<=n){
+    sum = sum + i;
+    i = i+1;
+}
+document.write("<br>Problem_9.<br>Sum = "+sum+".<br>");
+
+ 
+</script>
+</body>
+</html>
